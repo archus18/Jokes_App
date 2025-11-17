@@ -1,0 +1,49 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+          
+        }
+
+        .card {
+            width: 500px;
+            padding: 25px;
+            border-radius: 20px;
+            background: linear-gradient(to right, rgb(11, 204, 211), rgb(164, 34, 108), rgb(218, 7, 7), violet);
+            box-shadow: 0 8px 15px rgba(188, 18, 18, 0.2);
+            text-align: center;
+            transition: 0.3s ease-in-out;
+        }
+
+        .card:hover {
+        background: linear-gradient(to right, rgb(153, 25, 25), violet,rgb(232, 7, 229), rgb(20, 238, 205));
+        transform: scale(1.02);
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 8px;
+            border: none;
+            background-color: #ce1384;
+            color: rgb(17, 17, 17);
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #96989b;
+        }
+
+        #joke-result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            min-height: 40px;
+        }
