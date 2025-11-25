@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jokes App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+    <div class="theme-toggle">
+        <label class="switch">
+            <input type="checkbox" id="mode-toggle">
+            <span class="slider"></span>
+        </label>
+        <span id="mode-label">Light Mode</span>
+    </div>
+
     <div class="card">
-        <h2>😂Jokes Application😂 </h2>
-        <button id="joke-button">Get a Random Joke</button>
-        <div id="joke-result"></div>
+        <h2>😂 Jokes App 😄</h2>
+
+        <button id="joke-button">Get a Joke</button>
+
+        <div id="loading">⏳ Loading...</div>
+
+        <div id="emoji"></div>
+
+        <div id="joke-result" class="fade"></div>
+
+        <button id="copy-btn">Copy Joke</button>
+
+        <h3>Recent Jokes</h3>
+        <ul id="history"></ul>
     </div>
 
     <script src="script.js"></script>
